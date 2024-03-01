@@ -1,0 +1,67 @@
+.popular-course {
+  justify-content: center;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.courses-container {
+  margin: 2px 20px;
+}
+.card .image {
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+}
+.card-container span {
+  font-weight: bold;
+  margin-top: 5px;
+  border-radius: 3px;
+  padding: 3px;
+  text-align: center;
+  align-items: center;
+}
+.imag {
+  width: 250px;
+  height: 250px;
+  margin-left: 130px;
+}
+.popular {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 180px;
+  text-align: center;
+  align-items: center;
+  /* margin-left: 50px; */
+  cursor: pointer;
+}
+.img-text {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 20px;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.text {
+  align-items: center;
+}
+.paragraph {
+  margin-top: 10px;
+}
+.text {
+  font-size: large;
+}
+.card-container:hover {
+  background-color: rgb(6, 6, 63);
+  color: white;
+}
