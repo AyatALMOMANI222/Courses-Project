@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
+import { useContext } from "react";
+import { userContext } from "../../App.js";
 import Navbar from "../navbar/index.js";
-
 import Learning from "../learning/index.js";
 import Courses from "../courses/index.js";
 import Paragraph from "../paragraph/index.js";
@@ -8,30 +9,18 @@ import BuyCourse from "../buyCourse/index.js";
 import Footer from "../footer/index.js";
 import './style.css'
 function Main() {
-
-  const aboutRef = React.useRef(); 
-  const scroll =()=>{
-    const scrollHeight = aboutRef.current.getBoundingClientRect();
-    const container = document.getElementById("app-container");
-    console.log(scrollHeight);
-    if (container) {
-      container.scrollTo({
-        top: scrollHeight.y,
-        behavior: "smooth",
-      });
-    }
-  }
+ const {aboutRef, courseRef}= useContext(userContext)
+  
   return (
-    <div className="main-container" >
+    <div  >
       <div className="proj" >
-        <button onClick={()=>scroll()}>hiiiiiiiiii</button>
         <Navbar />
         <Learning />
-        <Courses />
+        <Courses courseRef={courseRef}  />
         <Paragraph />
         <BuyCourse />
-        <div ref={aboutRef}>
-        <Footer/>
+        <div>
+        <Footer aboutRef={aboutRef}/>
         </div>
       </div>
     </div>

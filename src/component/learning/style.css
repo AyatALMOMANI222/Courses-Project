@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 2px 20px;
+ 
 }
 .first-container {
   margin: 0px 0px 19px 0px;
@@ -15,6 +16,7 @@
 }
 .sentences {
   grid-area: sen;
+  padding: 20px;
 }
 .img {
   grid-area: img;
@@ -60,11 +62,16 @@
 }
 .coursera {
   color: rgb(89, 89, 211);
+  margin-right: 10px;
 }
 .course-name {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   margin-top: 5px;
+}
+.skill{
+  margin-right: 10px;
 }
 .img {
   display: flex;

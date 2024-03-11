@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { userContext } from "../../App";
 import "./style.css";
+
 const Footer = () => {
+  const { aboutRef } = useContext(userContext);
+
   return (
-    <div>
-      <div className="footer" id="about">
+    <div className="foot">
+      <div className="footer" id="about" ref={aboutRef}>
         <div>
           <h2>Quora.</h2>
           <p>
@@ -19,7 +23,7 @@ const Footer = () => {
         </div>
         <div>
           {" "}
-          <form class="newsletter-form" action="#" method="post">
+          <form className="newsletter-form" action="#" method="post">
             <input
               className="email"
               type="email"

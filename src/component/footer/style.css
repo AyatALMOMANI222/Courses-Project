@@ -1,13 +1,15 @@
+.foot{
+  background-color: rgb(10, 10, 74);
+
+}
 .footer {
   display: grid;
   grid-template-columns: 33% 32% 35%;
   justify-content: center;
   text-align: center;
-  background-color: rgb(10, 10, 74);
   color: white;
   height: 200px;
   align-items: center;
-  margin: 0px;
 }
 .newsletter-form {
   display: flex;

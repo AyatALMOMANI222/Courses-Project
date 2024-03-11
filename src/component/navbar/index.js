@@ -1,18 +1,11 @@
-// Navbar.js
-import {React , useRef} from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
+import { userContext } from "../../App";
 
 const Navbar = () => {
   const navigate = useNavigate();
-const aboutRef = useRef()
-
-const move =()=>{
-  aboutRef.current.scrollIntoView(({
-    behavior:"smooth", block :"center"
-  }))
-}
-
+  const { aboutRef, courseRef } = useContext(userContext);
 
   const handleClick = () => {
     navigate("/login");
@@ -23,7 +16,10 @@ const move =()=>{
   };
 
   const handleAboutClick = () => {
-    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    aboutRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+  const handleCourseClick = () => {
+    courseRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
@@ -31,7 +27,9 @@ const move =()=>{
       <div className="nav-container">
         <span onClick={handleAboutClick}>About</span>
         <span>
-          <a href="#courses">Courses</a>
+          <a href="#courses" onClick={handleCourseClick}>
+            Courses
+          </a>
         </span>
         <span>
           <a href="#pricing">Pricing</a>

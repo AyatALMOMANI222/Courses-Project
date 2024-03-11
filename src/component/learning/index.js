@@ -34,7 +34,7 @@ const Learning = () => {
         </div>
         <div className="course-name">
           <div className="coursera">coursera</div>
-          <div>skillshare</div>
+          <div className="skill" >skillshare</div>
           <div>Udemy</div>
         </div>
       </div>

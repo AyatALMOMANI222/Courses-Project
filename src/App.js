@@ -1,25 +1,29 @@
-import React from "react";
-import "./app.css";
+import React, { useRef, createContext } from "react";
+
+import { BrowserRouter , Routes, Route } from "react-router-dom";
+import Navbar from "./component/navbar";
+import Footer from "./component/footer";
 import Main from "./component/Main";
-import Login from "./component/login/index.js";
-// import Footer from "./component/footer/index.js";
-import Register from "./component/register/index.js";
-import { Route, Routes } from "react-router-dom";
 
-function App() {
+ export const userContext = createContext();
+
+ function App() {
+  const aboutRef = useRef(null);
+  const courseRef = useRef(null);
+
   return (
-    <div className="app-container" id="app-container">
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        {/* <Route path="/about" element={<Footer />} /> */}
-
-      </Routes>
-
-   
-    </div>
+    <userContext.Provider value={{ aboutRef,courseRef }}>
+    
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/navbar" element={<Navbar />} />
+          <Route path="/footer" element={<Footer />} />
+        </Routes>
+    
+    </userContext.Provider>
   );
 }
 
 export default App;
+
+

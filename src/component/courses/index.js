@@ -1,8 +1,11 @@
 import React from "react";
+import { useContext } from "react";
+import { userContext } from "../../App";
 import "./style.css";
-const Courses = () => {
+const Courses = ({courseRef}) => {
   return (
-    <div className="courses-container" id="courses">
+    
+    <div className="courses-container" id="courses" ref={courseRef}>
       <div>
         <div className="popular-course">
           <h3 className="popular">Our Popular Courses</h3>
