@@ -1,10 +1,16 @@
-*{
-    margin: 2px 20px;
-font-family: Arial, Helvetica, sans-serif;   
-
-
+* {
+  /* margin: 2px 20px; */
+  font-family: Arial, Helvetica, sans-serif;
 }
-.proj{
-    background-color:white;
-    justify-content: center;
+#root {
+  overflow: hidden;
+  height: 100vh;
+}
+.app-container{
+  overflow: overlay;
+  height: 100vh;
+}
+/* Hide scrollbar */
+#root::-webkit-scrollbar {
+  width: 0;
 }
