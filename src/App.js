@@ -4,7 +4,8 @@ import { BrowserRouter , Routes, Route } from "react-router-dom";
 import Navbar from "./component/navbar";
 import Footer from "./component/footer";
 import Main from "./component/Main";
-
+import Login from "./component/login";
+import Register from "./component/register"
  export const userContext = createContext();
 
  function App() {
@@ -18,6 +19,8 @@ import Main from "./component/Main";
           <Route path="/" element={<Main />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/footer" element={<Footer />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
     
     </userContext.Provider>

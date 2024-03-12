@@ -41,7 +41,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="btn">
-        <button onClick={handleClick}>Sign in</button>
+        <button className="b1" onClick={handleClick}>Sign in</button>
         <button onClick={handleSignClick}>Sign up</button>
       </div>
     </div>

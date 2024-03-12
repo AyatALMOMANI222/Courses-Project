@@ -6,7 +6,7 @@ const BuyCourse = () => {
       <div className="join-text">
         <h4 className="header">Join us and scale up</h4>
         <h4 className="header">your skill with your friends</h4>
-        <p>
+        <p className="txtt">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et sapien
           eu mi tincidunt feugiat. Nulla facilisi. Morbi dignissim neque non dui
           fermentum, sit amet cursus felis malesuada. Cras eget libero libero.

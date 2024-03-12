@@ -46,3 +46,28 @@ a {
 .nav-container span {
   cursor: pointer;
 }
+
+@media screen and (max-width:768px){
+  .navbar{
+width: 100%;
+display: grid;
+flex-wrap: nowrap;
+grid-template-columns:repeat(12,auto) ;
+  }
+
+}
+@media screen and (max-width:400px) {
+  .navbar{
+ 
+   
+ flex-wrap: wrap-reverse;
+  }
+  .b1{
+    margin-left: 0px;
+  }
+  .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

@@ -64,3 +64,29 @@
   margin-bottom: 290px;
   color: rgb(53, 172, 174);
 }
+@media screen and (max-width:768px) {
+  .card-user{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width:400px) {
+  .join-text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 290px;
+  }
+  .join-text .txtt{
+    width: 100%;
+height: 150px;
+flex-wrap: wrap;
+
+  }
+  .card-user{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

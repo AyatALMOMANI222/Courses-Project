@@ -19,3 +19,22 @@
 .words {
   margin-top: 20px;
 }
+@media screen and (max-width:768px) {
+  .paragraphh{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-evenly; 
+  }
+}
+@media screen and (max-width:400px) {
+  .paragraphh{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.words{
+  text-align: start;
+
+}
+
+}

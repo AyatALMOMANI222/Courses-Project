@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="foot">
       <div className="footer" id="about" ref={aboutRef}>
-        <div>
+        <div className="first">
           <h2>Quora.</h2>
           <p>
             Explore our courses and take your skills to the next level! Join

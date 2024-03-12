@@ -83,3 +83,39 @@
   margin-top: 12px;
   margin-bottom: 12px;
 }
+@media screen and (max-width:768px) {
+  .first-container{
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+   
+  }
+  .img{
+    width: 70%;
+    display: flex;
+    
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  .sentences{
+    margin-right: 50px;
+  }
+}
+@media screen and (max-width:400px) {
+  .first-container{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+  }
+  .courses{
+    display: flex;
+    flex-direction: column;
+  }
+  .courses-dev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
